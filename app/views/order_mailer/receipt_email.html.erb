@@ -1,0 +1,6 @@
+<h1>Thank you for for being a valued customer. Order ID #<%= @order.id %></h1>
+<hr>
+  <% @order.line_items.all.each do |item| %>
+      <%= render 'item', item: item %>
+  <% end %>
+<p>Total Price: $<%= @order.total_cents / 100.0 %></p>
