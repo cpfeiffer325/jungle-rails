@@ -1,0 +1,27 @@
+<h1>Register</h1>
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is valid</h2>
+      <ul>
+        <%@user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_for :user, url: '/users' do |f| %>
+  <div class="field">
+    <li>
+      First_Name: <%= f.text_field :first_name %>
+      Last_Name: <%= f.text_field :last_name %>
+      Email: <%= f.text_field :email %>
+      Password: <%= f.password_field :password %>
+      Password Confirmation: <%= f.password_field :password_confirmation %>
+      <%= f.submit "Submit" %>
+    </li>
+  </div>
+  <% end %>
+<% end %>
