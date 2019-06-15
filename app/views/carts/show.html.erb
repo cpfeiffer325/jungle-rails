@@ -49,8 +49,10 @@
       </div>
     </div>
     <% else %>
-      <h1>Please add an item to the cart</h1>
+    <div class="order-summary jumbotron">
+      <h3>Please add an item to the cart</h3>
       <%= link_to 'Home Page', :root, class: 'btn btn-info' %>
+    </div>
     <% end %>
   
   </section>
