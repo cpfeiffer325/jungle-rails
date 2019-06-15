@@ -133,12 +133,12 @@ cat3.products.create!({
 })
 
 # Create a user
-user1 = User.first_or_create(
-  first_name: 'John'
-  last_name: 'Doe'  
+user1 = User.first_or_create({
+  first_name: 'John',
+  last_name: 'Doe', 
   email: 'john@email.com',
   password: 'test'
-)
+})
 
 ## Populating the first review...
 puts "Creating product reviews..."
