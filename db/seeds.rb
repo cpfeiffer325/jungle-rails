@@ -149,5 +149,18 @@ Review.create({
   rating: 5
 })
 
+Review.create({
+  product: cat1.products.first,
+  user: user1,
+  description: 'I like these shirts, great fit!',
+  rating: 4
+})
+
+Review.create({
+  product: cat1.products.first,
+  user: user1,
+  description: 'Did not fit as advertised!',
+  rating: 2
+})
 
 puts "DONE!"
