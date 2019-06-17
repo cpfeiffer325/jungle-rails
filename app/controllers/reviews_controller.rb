@@ -23,7 +23,8 @@ class ReviewsController < ApplicationController
 
   def destroy
     # ensure user only can find owner comment.
-    @review = current_user.reviews.find(params[:id])
+    @review = Review.find(params[:id])
+    @product = Product.find(@review.product_id)
     @review.destroy
     redirect_to product_path(@product)
   end
