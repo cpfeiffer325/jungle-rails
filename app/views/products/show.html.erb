@@ -23,7 +23,34 @@
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
         </dl>
-      </div>
+      </div>      
+    </div>
+
+    <div class="col-sm-8" class="review_box">
+      <h4>Reviews</h4>
+
+      <%= form_for :review, url: product_reviews_path(@product) do |form| %>
+
+        <% if current_user %>
+        <div class="form-group">
+          <%= form.label :description %>
+          <%= form.text_area :description, class: 'form-control' %>
+          <br>
+          <%= form.label :rating %>
+          <%= form.select :rating, [1,2,3,4,5], class: 'form-control' %>
+        </div>
+        <% end %>
+
+        <%= form.submit 'Create Review', class: 'btn btn-primary' %>
+      <% end %>
+
+      <dl class="dl-horizontal">
+        <% @product.reviews.each do |review| %>
+        <dt><%= review.user.first_name %></dt>
+        <dd><%= review.description %></dd>
+        <dd><%= review.rating %> / 5</dd>
+        <% end %>
+      </dl>
     </div>
 
   </article>
