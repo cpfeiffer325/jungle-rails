@@ -71,7 +71,6 @@ main section.categories-show {
           opacity: 1.0;
         }
       }
-
     }
   }
 }
@@ -81,6 +80,16 @@ main section.products-show {
   .product-detail {
     img.main-img {
       max-width: 100%;
+    }
+    .review-summary {
+      display: flex;
+      width: 100%;
+      .table-row {
+        width: 100%;
+        td {
+          padding-right: 5px;
+        }
+      }
     }
   }
 }

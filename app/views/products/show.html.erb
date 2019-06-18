@@ -44,16 +44,20 @@
       
       <% end %>
       
-      <dl class="dl-horizontal">
-        <% @product.reviews.each do |review| %>
-        <dt><%= review.user.first_name %></dt>
-        <dd><%= review.description %></dd>
-        <dd><%= review.rating %> / 5</dd>
-          <% if current_user.id == review.user_id%>
-          <%= link_to fa_icon('trash'), product_review_url(@product, review), class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
-          <% end %>
+      <table class="review-summary jumbotron">
+        <% @reviews.each do |review| %>
+        <thread>
+          <tr class="table-row">
+            <td><strong><%= review.user.first_name %></strong></td>
+            <td><%= review.description %></td>
+            <td><%= review.rating %> / 5</td>
+              <% if current_user.id == review.user_id%>
+            <td><%= link_to fa_icon('trash'), product_review_url(@product, review), class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %></td>
+              <% end %>
+          </tr>
+        </thread>
         <% end %>
-      </dl>
+      </table>
     </div>
 
   </article>
