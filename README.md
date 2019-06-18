@@ -26,22 +26,22 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
-* rails, 4.2.6
+* Rails, 4.2.6
 * pg
-* sass-rails, ~> 5.0
-* uglifier, >= 1.3.0
-* jquery-rails
-* turbolinks
-* jbuilder, ~> 2.0
-* sdoc, ~> 0.4.0, group: :doc
-* bcrypt, ~> 3.1.7
-* puma
-* bootstrap-sass, ~> 3.3.6
-* font-awesome-rails
-* money-rails
-* carrierwave
-* rmagick
-* faker
+* Sass-rails, ~> 5.0
+* Uglifier, >= 1.3.0
+* Jquery-rails
+* Turbolinks
+* Jbuilder, ~> 2.0
+* Sdoc, ~> 0.4.0, group: :doc
+* Bcrypt, ~> 3.1.7
+* Puma
+* Bootstrap-sass, ~> 3.3.6
+* Font-awesome-rails
+* Money-rails
+* Carrierwave
+* Rmagick
+* Faker
 
 ##Screenshots
 
