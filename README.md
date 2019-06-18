@@ -45,14 +45,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-###Main Page
+### Main Page
 <img src=app/assets/images/main-page.png>
 
-###Admin Products page
+### Admin Products page
 <img src=app/assets/images/admin-products.png>
 
-###Cart
+### Cart
 <img src=app/assets/images/cart.png>
 
-###Order Summary
+### Order Summary
 <img src=app/assets/images/order-summary.png>
