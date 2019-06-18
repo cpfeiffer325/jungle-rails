@@ -49,7 +49,7 @@ Main Page
 <img src=app/assets/images/main-page.png>
 Admin Products page
 <img src=app/assets/images/admin-products.png>
-Order Summary
-<img src=app/assets/images/order-summary.png>
 Cart
 <img src=app/assets/images/cart.png>
+Order Summary
+<img src=app/assets/images/order-summary.png>
