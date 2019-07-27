@@ -72,4 +72,18 @@ RSpec.describe User, type: :model do
       expect(subject.errors.full_messages).to include("Password is too short (minimum is 6 characters)")
     end   
   end
+
+  describe ".authenticate_with_credentials" do
+    subject{
+      described_class.new(
+        email: "jdoe@email.com", 
+        password: "test1234", 
+      )
+    }
+
+    it "is valid with authenticated email and password" do
+      user = User.authenticate_with_credentials(subject.email, subject.password)
+      # expect(subject.email).to eq(email)
+    end
+  end
 end
