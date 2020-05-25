@@ -13,7 +13,7 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th colspan="2">Sales</th>
+          <th>Sales</th>
           <th>Starts On</th>
           <th>End Date</th>
           <th>Status</th>
@@ -22,7 +22,11 @@
         </tr>
       </thead>
       <tbody>
-        <%= render @sales %>
+        <%#= render @sales %>
+
+        <% @sales.each do |s| %>
+          <%= render 'sale', sale: s %>
+        <% end %>
       </tbody>
     </table>
 
