@@ -1,0 +1,11 @@
+main section.about-show {
+  .page-header {
+    color: green;
+    text-align: center;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-around;
+  }
+}

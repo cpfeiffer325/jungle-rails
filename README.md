@@ -34,7 +34,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Jquery-rails
 * Turbolinks
 * Jbuilder, ~> 2.0
-* Sdoc, ~> 0.4.0, group: :doc
+* Sdoc, ~> 0.4.0, group: :do
 * Bcrypt, ~> 3.1.7
 * Puma
 * Bootstrap-sass, ~> 3.3.6
